@@ -8,7 +8,8 @@ import packagesRoutes from "./src/routes/packages.js";
 import vehiclesRoutes from "./src/routes/vehicles.js";
 import routesRoutes from "./src/routes/routes.js"; 
 import shipmentsRoutes from "./src/routes/shipments.js";
-
+import loginClientRoutes from "./src/routes/loginClients.js"
+import loginDriverRoutes from "./src/routes/loginDrivers.js"
 // Ejecutar express
 const app = express();
 
@@ -23,5 +24,7 @@ app.use("/api/packages", packagesRoutes);
 app.use("/api/vehicles", vehiclesRoutes);
 app.use("/api/routes", routesRoutes);
 app.use("/api/shipments", shipmentsRoutes);
+app.use("/api/loginclients", loginClientRoutes);
+app.use("/api/logindrivers", loginDriverRoutes);
 
 export default app;
